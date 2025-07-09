@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>Snazzy Paws Grooming - Booking</title>
+        <link rel="stylesheet" href="stylesheet.css"> <!-- Link to external CSS -->
+    </head>
+    <body>
+        <header>
+            <div class="header-background"> <!-- Header section -->
+                <div class="header-content">
+                    <h1>Snazzy Paws Grooming</h1>
+                    <h2>Book Your Dog’s Grooming Appointment</h2>
+                </div>
+            </div>
+            <nav aria-label="Main Navigation"> <!-- Navigation bar -->
+                <ul class="nav-menu">  <!-- Each navigation link has a text version for large screens and icon version for small mobile-like screens -->
+                    <li><a href="index.html" class="nav-text">Home</a><a href="index.html" class="nav-icon"><img src="images/nav-home.png" alt="Home"></a></li>
+                    <li><a href="services.html" class="nav-text">Services</a><a href="services.html" class="nav-icon"><img src="images/nav-services.png" alt="Services"></a></li>
+                    <li><a href="gallery.html" class="nav-text">Gallery</a><a href="gallery.html" class="nav-icon"><img src="images/nav-gallery.png" alt="Gallery"></a></li>
+                    <li><a href="booking.html" class="nav-text">Book</a><a href="booking.html" class="nav-icon"><img src="images/nav-booking.png" alt="Book Now"></a></li>
+                    <li><a href="contact.html" class="nav-text">Contact</a><a href="contact.html" class="nav-icon"><img src="images/nav-contact.png" alt="Contact"></a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section class="booking-section">
+                <h2 class="booking-heading">Appointment Booking Form</h2>
+                <form class="booking-form">  <!-- Booking form content -->
+                    <label for="owner-name">Owner's Name:</label>
+                    <input type="text" id="owner-name" name="owner-name" required>
+
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="dog-name">Dog's Name:</label>
+                    <input type="text" id="dog-name" name="dog-name" required>
+
+                    <label for="breed">Dog's Breed:</label>
+                    <input type="text" id="breed" name="breed">
+
+                    <label for="age">Dog's Age:</label>
+                    <input type="number" id="age" name="age" min="0">
+
+                    <button type="submit" class="book-submit">Submit Booking</button>
+                </form>
+            </section>
+        </main>
+        <footer> <!-- Footer section with opening hours -->
+            <p>Snazzy Paws Grooming<br>Open Monday to Saturday, 9:00 AM – 5:00 PM</p>
+        </footer>
+    </body>
+</html>
